@@ -4,32 +4,40 @@ public class Book {
     private String author;
     private int year;
     private String genre;
-    public Book(){
 
+    public Book() {
     }
-    public Book(int bookId,String title,String author, int year,String genre){
-        this.bookId=bookId;
-        this.title=title;
-        this.author=author;
-        this.year=year;
-        this.genre=genre;
+
+    public Book(int bookId, String title, String author, int year, String genre) {
+        this.bookId = bookId;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.genre = genre;
     }
-    public int getId(){
+
+    public int getId() {
         return this.bookId;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return this.title;
     }
-    public int getYear(){
+
+    public int getYear() {
         return this.year;
-        
     }
-    public String getAuthor(){
+
+    public String getAuthor() {
         return this.author;
     }
-    public String toString(){
-        String ss="Id: "+this.bookId+" Title: "+this.title+" Author: "+this.author+" Publication Year: "+this.year+" Genre: "+this.genre;
-        return ss;
+
+    @Override
+    public String toString() {
+        return "Id: " + this.bookId + 
+               " Title: " + this.title + 
+               " Author: " + this.author + 
+               " Publication Year: " + this.year + 
+               " Genre: " + this.genre;
     }
-   
 }
